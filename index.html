@@ -208,7 +208,7 @@
 </head>
 <body>
 
-  <!-- LOGIN VIEW -->
+  
   <div id="loginView" class="auth-body">
     <div class="auth-card">
       <h2>🏆 Apex Sports Club</h2>
@@ -229,7 +229,7 @@
     </div>
   </div>
 
-  <!-- REGISTER VIEW -->
+  
   <div id="registerView" class="auth-body hidden">
     <div class="auth-card">
       <h2>🏆 Apex Sports Club</h2>
@@ -265,7 +265,6 @@
     </div>
   </div>
 
-  <!-- DASHBOARD VIEW -->
   <div id="dashboardView" class="hidden">
     <nav class="navbar">
       <div class="logo">🏆 Apex Sports Club</div>
@@ -373,7 +372,7 @@
       }
     });
 
-    // Send registration data to Express & MongoDB
+   
     document.getElementById('registerForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       const fullName = document.getElementById('fullName').value.trim();
@@ -402,7 +401,7 @@
       }
     });
 
-    // Verify login with Express & MongoDB
+    
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       const username = document.getElementById('loginUsername').value.trim();

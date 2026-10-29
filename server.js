@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-// Connected to sportsClubDB on your friend's laptop
+
 mongoose.connect('mongodb://127.0.0.1:27017/sportsClubDB')
   .then(() => console.log('✅ Connected to MongoDB (sportsClubDB)'))
   .catch((err) => console.error('❌ MongoDB connection error:', err));
