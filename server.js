@@ -12,8 +12,8 @@ app.use(cors());
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/sportsClubDB')
-  .then(() => console.log('✅ Connected to MongoDB (sportsClubDB)'))
-  .catch((err) => console.error('❌ MongoDB connection error:', err));
+  .then(() => console.log('Connected to MongoDB (sportsClubDB)'))
+  .catch((err) => console.error(' MongoDB connection error:', err));
 
 const userSchema = new mongoose.Schema({
   fullName: { type: String, required: true },
@@ -64,5 +64,5 @@ app.post('/api/login', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('🚀 Server running at http://localhost:' + PORT);
+  console.log(' Server running at http://localhost:' + PORT);
 });
